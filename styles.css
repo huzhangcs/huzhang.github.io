@@ -4,45 +4,53 @@ body {
     padding: 0;
     background: #fff;
     color: #333;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 .container {
     width: 80%;
     margin: auto;
-    max-width: 800px;
+    max-width: 900px;
+}
+
+.header {
+    text-align: left;
+    margin: 40px 0;
 }
 
 .header h1 {
-    font-size: 2em;
+    font-size: 1.75em;
     font-weight: normal;
-    text-align: center;
     margin: 0;
-    padding: 20px 0;
+    display: inline;
+}
+
+.header a, .contact-info a {
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
 }
 
 .contact-info {
-    text-align: center;
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-.contact-info span {
+.contact-info a:not(:last-child):after {
+    content: '|';
     margin: 0 10px;
 }
 
-.main-content {
-    border-top: 1px solid #ccc;
-    padding-top: 20px;
-}
-
-.main-content section:not(:last-child) {
-    margin-bottom: 20px;
-}
-
 .main-content h2 {
-    font-size: 1.5em;
-    font-weight: normal;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+.main-content p, .main-content li {
+    margin: 10px 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -55,6 +63,6 @@ body {
     }
 
     .main-content h2 {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 }
