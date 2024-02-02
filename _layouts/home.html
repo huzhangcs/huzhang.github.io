@@ -4,7 +4,11 @@ layout: archive
 
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+Dr Hu Zhang (张虎) is currently a Postdoctoral Research Fellow in CSIRO, Australia. Before that, he was a Postdoctoral at EECS, The University of Queensland. His research interests include 3D LiDAR-based detection, 3D reconstruction, long-tailed classification, and computer vision based applications. He received his Ph.D. degree from University of Technology Sydney (UTS). He graduated from University of Science and Technology of China (USTC) and obtained his bachelor degree.
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "News" }}</h3>
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Publications" }}</h3>
 
 {% if paginator %}
   {% assign posts = paginator.posts %}
